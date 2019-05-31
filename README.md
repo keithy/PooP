@@ -3,9 +3,14 @@
 ## Specification of ideas to improve to PHP
 
 1. Classes as first class objects
-
+```
 $person = $_CLASSES['Models\\Persons']->new();
 $person = $_NAMESPACE['Models']['Persons']->new();
+```
+
+Could be pre-populated by an autoloader to return a factory, lazy (auto)loading function.
+
+Alternatively implemented as a function, returning a proxy-class, which loads on new() and delegates to static methods.
 
 2. Scalar Object methods 
 
