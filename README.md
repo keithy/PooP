@@ -86,7 +86,7 @@ Allows functions other than `assert()` to raise AssertionNotification and Assert
 
 10. PDO to accept config array as more consistent alternative to dsn
 
-Improve the consistency of PDO instanciation as per http://keithy/primo-pdo-php
+Improve the consistency of PDO instanciation as per http://github.comkeithy/primo-pdo-php
  
 
 
