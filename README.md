@@ -14,14 +14,6 @@ $person = $_NAMESPACE['Models']['Persons']->new();
  "Testing"->length();
 $person->class();
 ```
-3. Function call as a sentence
-```
-function between($a)and($b) 
-{
-return $this > $a && $this < $b;
-}
-```
-## Tricky - requiring Language pre-parser  
 
 4. Evaluate Callables and Scalars
 ```
@@ -29,6 +21,17 @@ class Person { function hello() { return "Hello World"; } }
 
 assert( true == ($this->hello->__value() == "Hello World"->__value());
 ```
+
+## Tricky - requiring Language pre-parser  
+
+3. Function call as a sentence
+```
+function between($a)and($b) 
+{
+return $this > $a && $this < $b;
+}
+```
+
 5. Naming Convention for DCI-Roles
 
 "role" => "trait"
