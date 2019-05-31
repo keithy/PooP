@@ -30,12 +30,15 @@ function between($a)and($b)
 {
 return $this > $a && $this < $b;
 }
-
+```
+```
 function at($key)put($valueOrFunction) 
 {
  $this[$key] = $valueOrFunction->__value();
  return $this;
 }
+```
+```
 function at($key)ifAbsentPut($valueOrFunction) 
 {
  return $this[$key] ?? $this[$key] = $valueOrFunction->__value();
