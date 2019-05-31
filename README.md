@@ -22,7 +22,7 @@ class Person { function hello() { return "Hello World"; } }
 assert( true == ($this->hello->__value() == "Hello World"->__value());
 ```
 
-## Tricky - requiring Language pre-parser  
+## Tricky - requiring language change or pre-parser  
 
 3. Function call as a sentence
 ```
@@ -66,17 +66,10 @@ Allows functions other than `assert()` to raise AssertionNotification and Assert
 
 ## Miscellaneous
 
-10. PDO to accept array as alternative to dsn
+10. PDO to accept config array as more consistent alternative to dsn
 
 Improve the consistency of PDO instanciation as per http://keithy/primo-pdo-php
-
-11. If variable isset do - operator
-```
-if (!isset($name)) $name = "Dolittle";  // $name ?? $name = "Dolittle";
-if (isset($data)) $name = "Dr. $name";  // $name ? $name = "Dr. $name"
-i.e. $a ? <exp>  is equivalent to $a ? <exp> : null;
-```
-
+ 
 
 
 
